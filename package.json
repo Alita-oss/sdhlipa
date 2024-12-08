@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "lint": "eslint .",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -16,7 +17,12 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.12.0",
     "sass": "^1.80.6",
+    "typescript-eslint": "^8.16.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.1"
   }
