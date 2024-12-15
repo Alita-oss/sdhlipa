@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div>
+        <h1>Competition</h1>
+    </div>
 </template>
 
 <script setup lang="ts"></script>
