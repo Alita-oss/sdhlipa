@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>History</h1>
-    </div>
+    <h1>History</h1>
 </template>
 
 <script setup lang="ts"></script>
