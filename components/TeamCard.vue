@@ -1,8 +1,7 @@
 <template>
     <v-card class="team-card">
-        <v-img :src="team.image" class="team-image"></v-img>
+        <v-img :src="team.image.src" :alt="team.image.alt" class="team-image" />
         <v-card-title class="team-title">{{ team.name }}</v-card-title>
-        <!--<v-card-subtitle class="team-category">{{ team.category }}</v-card-subtitle>-->
         <v-card-text>
             <v-list density="compact">
                 <v-list-item v-for="player in team.players" :key="player.id">
@@ -16,20 +15,11 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue';
+import type { Team } from '@/types/team';
 
-defineProps({
-    team: {
-        type: Object as PropType<{
-            id: number;
-            name: string;
-            //category: string;
-            image: string;
-            players: { id: number; name: string; position: string }[];
-        }>,
-        required: true,
-    },
-});
+defineProps<{
+    team: Team;
+}>();
 </script>
 
 <style lang="scss" scoped>

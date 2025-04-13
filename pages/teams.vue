@@ -11,13 +11,16 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import TeamCard from '@/components/TeamCard.vue';
+import type { Team } from '~/types/team';
 
-const teams = ref([
+const teams = ref<Team[]>([
     {
         id: 1,
         name: 'Dorost',
-        //category: 'Youth Team',
-        image: '/assets/images/juniors.jpg',
+        image: {
+            src: '/assets/imgages/juniors.jpg',
+            alt: 'tým Dorostu',
+        },
         players: [
             { id: 1, name: 'Kačka Špilková', position: 'Koš' },
             { id: 2, name: 'Markét Urcikánová', position: 'Savice' },
@@ -31,8 +34,10 @@ const teams = ref([
     {
         id: 2,
         name: 'Muži',
-        //category: 'Senior Team',
-        image: '/assets/imgages/men.jpg',
+        image: {
+            src: '/assets/imgages/men.jpg',
+            alt: 'tým Mužů',
+        },
         players: [
             { id: 1, name: '//', position: 'Koš' },
             { id: 2, name: 'Vojta Hejl', position: 'Savice' },
@@ -46,8 +51,10 @@ const teams = ref([
     {
         id: 3,
         name: 'Děti',
-        //category: 'Youth Team',
-        image: '/assets/imgages/kids.jpg',
+        image: {
+            src: '/assets/imgages/kids.jpg',
+            alt: 'tým Dětí',
+        },
         players: [
             { id: 1, name: 'Jiřík', position: 'Koš' },
             { id: 2, name: 'Vojta', position: 'Savice' },
