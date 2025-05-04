@@ -18,7 +18,7 @@ const teams = ref<Team[]>([
         id: 1,
         name: 'Dorost',
         image: {
-            src: '/assets/imgages/juniors.jpg',
+            src: '/assets/images/juniors.jpg',
             alt: 'tým Dorostu',
         },
         players: [
@@ -35,7 +35,7 @@ const teams = ref<Team[]>([
         id: 2,
         name: 'Muži',
         image: {
-            src: '/assets/imgages/men.jpg',
+            src: '/assets/images/men.jpg',
             alt: 'tým Mužů',
         },
         players: [
@@ -52,7 +52,7 @@ const teams = ref<Team[]>([
         id: 3,
         name: 'Děti',
         image: {
-            src: '/assets/imgages/kids.jpg',
+            src: '/assets/images/kids.jpg',
             alt: 'tým Dětí',
         },
         players: [
